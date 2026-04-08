@@ -1,0 +1,56 @@
+info:
+  name: UpdateRegistrationFiles
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5044/api/RegisterAirline/UpdateRegistrationFiles?register_id=147
+  params:
+    - name: register_id
+      value: "147"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: file_bus_reg_cer
+        type: file
+        value:
+          - /C:/Users/ASUS/Documents/CyberSecurity.pdf
+      - name: file_agent_oper_license
+        type: file
+        value:
+          - /C:/Users/ASUS/Documents/CyberSecurity.pdf
+      - name: file_tax_reg
+        type: file
+        value:
+          - /C:/Users/ASUS/Pictures/aidc/WhatsApp Image 2024-12-30 at 21.03.00.jpeg
+      - name: profit_and_loss_statement
+        type: file
+        value:
+          - /C:/Users/ASUS/Pictures/aidc/WhatsApp Image 2024-12-30 at 21.03.00.jpeg
+      - name: cashflow_statement
+        type: file
+        value:
+          - /C:/Users/ASUS/Pictures/aidc/WhatsApp Image 2024-12-30 at 21.03.00.jpeg
+      - name: balance_sheet_statement
+        type: file
+        value:
+          - /C:/Users/ASUS/Pictures/aidc/WhatsApp Image 2024-12-30 at 21.03.00.jpeg
+      - name: file_id_card
+        type: file
+        value:
+          - /C:/Users/ASUS/Pictures/aidc/WhatsApp Image 2024-12-30 at 21.03.00.jpeg
+      - name: auth_rep_file_id_card
+        type: file
+        value:
+          - /C:/Users/ASUS/Pictures/aidc/WhatsApp Image 2024-12-30 at 21.03.00.jpeg
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

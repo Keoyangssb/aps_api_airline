@@ -1,0 +1,27 @@
+info:
+  name: UploadFile docs
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: https://apiairline-aps.aidctech.net/api/Ocr/UploadFile
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: file
+        value:
+          - /Users/keoyang/Downloads/WhatsApp Image 2026-01-29 at 15.38.15.jpeg
+      - name: expected_doc_type
+        type: text
+        value: passport
+        description: passport, id_card, business_registration
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,18 @@
+info:
+  name: GetAirlineById
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/GetAirlineById"
+  body:
+    type: json
+    data: "{\r\n    \"id\": \"167\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

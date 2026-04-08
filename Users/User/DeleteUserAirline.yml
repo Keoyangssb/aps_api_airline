@@ -1,0 +1,20 @@
+info:
+  name: DeleteUserAirline
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/DeleteUserAirline"
+  body:
+    type: json
+    data: "{\r\n    \"user_id\": \"15\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

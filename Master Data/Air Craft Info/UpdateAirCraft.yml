@@ -1,0 +1,30 @@
+info:
+  name: UpdateAirCraft
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/MasterData/UpdateAirCraft"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"aircraft_id\": \"1\",\r
+
+      \  \"icao_code\": \"A001\",\r
+
+      \  \"mtow\": \"200\",\r
+
+      \  \"weight\": \"600\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

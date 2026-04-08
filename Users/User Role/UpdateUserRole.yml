@@ -1,0 +1,26 @@
+info:
+  name: UpdateUserRole
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/UserRole/UpdateUserRole"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": \"6\",\r
+
+      \  \"role_name\": \"test123uuuuuu\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

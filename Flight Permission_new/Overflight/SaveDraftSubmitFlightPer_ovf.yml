@@ -1,0 +1,214 @@
+info:
+  name: SaveDraftSubmitFlightPer_ovf
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/SaveDraftSubmitFlightPer_ovf"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"customer_id\": \"147\",\r
+
+      \  \"select_flight_type\": \"1\",  //1 = schedule , 2 non schedule\r
+
+      \  \"select_urgency\": \"1\", // 1 = general, 2 = urgent\r
+
+      \  \"season_id\": \"1\",\r
+
+      \  \"operator_type_id\": \"1\",\r
+
+      \  \"request_no\": \"\",\r
+
+      \  \"request_date\": \"\",\r
+
+      \  \"purpose_flight_id\": \"1\",\r
+
+      \  \"tfc_proviso\": \"\",\r
+
+      \  \"save_type\": \"2\", // 1 = save draft, 2 = submit\r
+
+      \  \"flight_per_details\": [\r
+
+      \    {\r
+
+      \      \"flight_no\": \"flight_no_001\",\r
+
+      \      \"from_date\": \"2025-08-10\",\r
+
+      \      \"to_date\": \"2025-08-12\",\r
+
+      \      \"date_of_operation\": \"string\",\r
+
+      \      \"is_daily\": false,\r
+
+      \      \"is_mon\": true,\r
+
+      \      \"is_tue\": false,\r
+
+      \      \"is_wed\": false,\r
+
+      \      \"is_thu\": false,\r
+
+      \      \"is_fri\": false,\r
+
+      \      \"is_sat\": false,\r
+
+      \      \"is_sun\": false,\r
+
+      \      \"max_seat\": \"\",\r
+
+      \      \"lease\": \"\",\r
+
+      \      \"mtow\": \"\",\r
+
+      \      \"route\": \"VTE-LPB\",\r
+
+      \      \"etd\": \"10:30\",\r
+
+      \      \"eta\": \"11:45\",\r
+
+      \      \"flight_level_id\": \"1\",\r
+
+      \      \"is_aoc\": false,\r
+
+      \      \"is_cor\": false,\r
+
+      \      \"is_coa\": false,\r
+
+      \      \"is_con\": false,\r
+
+      \      \"is_arsl\": false,\r
+
+      \      \"is_coi\": false,\r
+
+      \      \"is_cml\": false,\r
+
+      \      \"is_opp\": false,\r
+
+      \      \"is_mc\": false,\r
+
+      \      \"is_ghc\": false,\r
+
+      \      \"is_mc_amo\": false,\r
+
+      \      \"is_po_la\": false,\r
+
+      \      \"is_asp\": false,\r
+
+      \      \"flight_per_detail_aircraft_types\": [\r
+
+      \        {\r
+
+      \          \"acraft_type_id\": \"270\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \          \"acraft_type_id\": \"271\"\r
+
+      \        }\r
+
+      \      ]\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"flight_no\": \"flight_no_002\",\r
+
+      \      \"from_date\": \"2025-08-12\",\r
+
+      \      \"to_date\": \"2025-08-13\",\r
+
+      \      \"date_of_operation\": \"\",\r
+
+      \      \"is_daily\": true,\r
+
+      \      \"is_mon\": true,\r
+
+      \      \"is_tue\": true,\r
+
+      \      \"is_wed\": true,\r
+
+      \      \"is_thu\": true,\r
+
+      \      \"is_fri\": true,\r
+
+      \      \"is_sat\": true,\r
+
+      \      \"is_sun\": true,\r
+
+      \      \"max_seat\": \"500\",\r
+
+      \      \"lease\": \"\",\r
+
+      \      \"mtow\": \"800\",\r
+
+      \      \"route\": \"VTE-ODX\",\r
+
+      \      \"etd\": \"08:30\",\r
+
+      \      \"eta\": \"10:00\",\r
+
+      \      \"flight_level_id\": \"2\",\r
+
+      \      \"is_aoc\": false,\r
+
+      \      \"is_cor\": false,\r
+
+      \      \"is_coa\": false,\r
+
+      \      \"is_con\": false,\r
+
+      \      \"is_arsl\": false,\r
+
+      \      \"is_coi\": false,\r
+
+      \      \"is_cml\": false,\r
+
+      \      \"is_opp\": false,\r
+
+      \      \"is_mc\": false,\r
+
+      \      \"is_ghc\": false,\r
+
+      \      \"is_mc_amo\": false,\r
+
+      \      \"is_po_la\": false,\r
+
+      \      \"is_asp\": false,\r
+
+      \      \"flight_per_detail_aircraft_types\": [\r
+
+      \        {\r
+
+      \          \"acraft_type_id\": \"272\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \          \"acraft_type_id\": \"273\"\r
+
+      \        }\r
+
+      \      ]\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

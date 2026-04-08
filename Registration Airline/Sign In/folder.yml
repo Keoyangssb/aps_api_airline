@@ -1,0 +1,7 @@
+info:
+  name: Sign In
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

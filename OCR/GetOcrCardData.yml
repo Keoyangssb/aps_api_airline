@@ -1,0 +1,46 @@
+info:
+  name: GetOcrCardData
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: https://apiairline-aps.aidctech.net/api/Ocr/GetOcrCardData
+  body:
+    type: json
+    data: "{\r
+
+      \  \"job_id\": \"string\",\r
+
+      \  \"card_no\": \"string\",\r
+
+      \  \"name_and_surName\": \"string\",\r
+
+      \  \"issue_date\": \"string\",\r
+
+      \  \"expire_date\": \"string\",\r
+
+      \  \"position\": \"string\",\r
+
+      \  \"phone_number\": \"string\",\r
+
+      \  \"email\": \"string\",\r
+
+      \  \"operator_name\": \"string\",\r
+
+      \  \"country_of_registration\": \"string\",\r
+
+      \  \"iata_code\": \"string\",\r
+
+      \  \"icao_code\": \"string\",\r
+
+      \  \"business_registration_number\": \"string\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

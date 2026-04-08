@@ -1,0 +1,25 @@
+info:
+  name: UploadFlightPerFile
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/UploadFile/UploadFlightPerFile"
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /C:/Users/ASUS/Documents/CyberSecurity.pdf
+      - name: flight_per_id
+        type: text
+        value: "123"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

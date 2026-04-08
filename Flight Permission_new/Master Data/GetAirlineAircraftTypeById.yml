@@ -1,0 +1,21 @@
+info:
+  name: GetAirlineAircraftTypeById
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://10.0.100.31:8087/api/MasterData/GetAirlineAircraftTypeById
+  body:
+    type: json
+    data: "{\r
+
+      \    \"aircraft_type_id\": \"241\"\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

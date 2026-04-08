@@ -1,0 +1,50 @@
+info:
+  name: UpdateAircraftRegistration
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/RegisterAirline/UpdateAircraftRegistration"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"register_id\": \"163\",\r
+
+      \  \"airline_aircraft_id\": \"38\",\r
+
+      \  \"operator_type\": \"1\",\r
+
+      \  \"aircraft_type_id\": \"412\",\r
+
+      \  \"aircraft_model\": \"Embraer 170\",\r
+
+      \  \"registration_mark\": \"9VTHC010000\",\r
+
+      \  \"mtow\": \"80\",\r
+
+      \  \"seat\": \"800\",\r
+
+      \  \"remark\": \"\",\r
+
+      \  \"is_aircraft_leased\": false,\r
+
+      \  \"register_airline_id\": 0,\r
+
+      \  \"airline_country_id\": 0,\r
+
+      \  \"iata_code\": \"\",\r
+
+      \  \"icao_code\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: UploadSubmitPaymentFile
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/UploadSubmitPaymentFile?paymentCode=20260130074142153"
+  params:
+    - name: paymentCode
+      value: "20260130074142153"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /Users/keoyang/Downloads/Dashboard.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

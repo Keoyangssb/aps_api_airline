@@ -1,0 +1,30 @@
+info:
+  name: add
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://localhost:7063/api/google-calendar/CreateEvent
+  body:
+    type: json
+    data: "{\r
+
+      \  \"summary\": \"Team Meeting\",\r
+
+      \  \"description\": \"Discuss project progress\",\r
+
+      \  \"start\": \"2025-12-18T10:00:00\",\r
+
+      \  \"end\": \"2025-12-18T11:00:00\",\r
+
+      \  \"timeZone\": \"Asia/Bangkok\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: SaveChatMessage
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Ticket/SaveChatMessage"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": \"1\",\r
+
+      \  \"message\": \"we can't submite flight permission. please check then lets us know. thanks\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,14 @@
+info:
+  name: GetRequestNo_landing
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5044/api/FlightPermissionLanding/GetRequestNo_landing
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

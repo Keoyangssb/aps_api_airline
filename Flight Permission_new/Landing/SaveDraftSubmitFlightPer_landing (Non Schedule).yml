@@ -1,0 +1,218 @@
+info:
+  name: SaveDraftSubmitFlightPer_landing (Non Schedule)
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/SaveDraftSubmitFlightPer_landing"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"customer_id\": \"147\",\r
+
+      \  \"select_flight_type\": \"2\",  //1 = schedule , 2 non schedule\r
+
+      \  \"select_urgency\": \"1\", // 1 = general, 2 = urgent\r
+
+      \  \"season_id\": \"1\",\r
+
+      \  \"operator_type_id\": \"1\",\r
+
+      \  \"request_no\": \"APS-2026-002\",\r
+
+      \  \"request_date\": \"2025-01-26\",\r
+
+      \  \"purpose_flight_id\": \"1\",\r
+
+      \  \"tfc_proviso\": \"test\",\r
+
+      \  \"save_type\": \"2\", // 1 = save draft, 2 = submit\r
+
+      \  \"flight_per_details\": [\r
+
+      \    {\r
+
+      \      \"flight_no\": \"QTR817\",\r
+
+      \      \"date_of_operation\": \"2025-02-02\",\r
+
+      \      \"is_daily\": true,\r
+
+      \      \"is_mon\": false,\r
+
+      \      \"is_tue\": false,\r
+
+      \      \"is_wed\": false,\r
+
+      \      \"is_thu\": false,\r
+
+      \      \"is_fri\": false,\r
+
+      \      \"is_sat\": false,\r
+
+      \      \"is_sun\": false,\r
+
+      \      \"departure\": \"VHHH\",\r
+
+      \      \"destination\": \"OTHH\",\r
+
+      \      \"alternate_aerodrome\": \"test\",\r
+
+      \      \"etd\": \"10:30\",\r
+
+      \      \"eta\": \"11:45\",\r
+
+      \      \"flight_rules\": \"test123\",\r
+
+      \       \"flight_level_id\": \"1\",\r
+
+      \      \"max_seat\": \"200\",\r
+
+      \      \"mtow\": \"1000\",\r
+
+      \      \"route\": \"VTE-LPB\",\r
+
+      \      \"ats_id\": \"1\",\r
+
+      \      \"speed\": \"test123\",\r
+
+      \      \"pax_in\": \"test123\",\r
+
+      \      \"pax_out\": \"test123\",\r
+
+      \      \"ground_handing\": \"test123\",\r
+
+      \      \"is_aoc\": false,\r
+
+      \      \"is_cor\": false,\r
+
+      \      \"is_coa\": false,\r
+
+      \      \"is_con\": false,\r
+
+      \      \"is_coi\": false,\r
+
+      \      \"is_cm_lic\": false,\r
+
+      \        \"is_arsl\": false,\r
+
+      \      \"flight_per_detail_aircraft_types\": [\r
+
+      \        {\r
+
+      \          \"acraft_type_id\": \"270\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \          \"acraft_type_id\": \"271\"\r
+
+      \        }\r
+
+      \      ]\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"flight_no\": \"CES9634\",\r
+
+      \      \"from_date\": \"2025-02-02\",\r
+
+      \      \"to_date\": \"2025-02-02\",\r
+
+      \      \"date_of_operation\": \"\",\r
+
+      \      \"is_daily\": true,\r
+
+      \      \"is_mon\": false,\r
+
+      \      \"is_tue\": false,\r
+
+      \      \"is_wed\": false,\r
+
+      \      \"is_thu\": false,\r
+
+      \      \"is_fri\": false,\r
+
+      \      \"is_sat\": false,\r
+
+      \      \"is_sun\": false,\r
+
+      \      \"departure\": \"VHHH\",\r
+
+      \      \"destination\": \"OTHH\",\r
+
+      \      \"alternate_aerodrome\": \"test\",\r
+
+      \      \"etd\": \"10:30\",\r
+
+      \      \"eta\": \"11:45\",\r
+
+      \      \"flight_rules\": \"test123\",\r
+
+      \       \"flight_level_id\": \"1\",\r
+
+      \      \"max_seat\": \"200\",\r
+
+      \      \"mtow\": \"1000\",\r
+
+      \      \"route\": \"VTE-LPB\",\r
+
+      \      \"ats_id\": \"1\",\r
+
+      \      \"speed\": \"test123\",\r
+
+      \      \"pax_in\": \"test123\",\r
+
+      \      \"pax_out\": \"test123\",\r
+
+      \      \"ground_handing\": \"test123\",\r
+
+      \      \"is_aoc\": false,\r
+
+      \      \"is_cor\": false,\r
+
+      \      \"is_coa\": false,\r
+
+      \      \"is_con\": false,\r
+
+      \      \"is_coi\": false,\r
+
+      \      \"is_cm_lic\": false,\r
+
+      \        \"is_arsl\": false,\r
+
+      \      \"flight_per_detail_aircraft_types\": [\r
+
+      \        {\r
+
+      \          \"acraft_type_id\": \"270\"\r
+
+      \        },\r
+
+      \        {\r
+
+      \          \"acraft_type_id\": \"271\"\r
+
+      \        }\r
+
+      \      ]\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,23 @@
+info:
+  name: ChangeLogo
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://10.0.100.31:8087/api/RegisterAirline/ChangeLogo
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value: []
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzMjE0MTEyNjE2MjIwMTQ2MjIxMzI0MTIwOTM4MzI0NTU5MTU2MjE4MTU0MTQ5MTE1MTU4MTMwMjE3MTM5MjIzMTgyNDM1NjEwNTIyNDE1MjQxMTA0IiwianRpIjoiMWYwNmNiODQtZjQwMS00N2QxLTlkYTktZmNhZmFjMjIyODQzIiwiZXhwIjoxNzU2OTY4NjY0LCJpc3MiOiJBSURDLlRFQ0giLCJhdWQiOiJBUFMuQWlybGluZS5BUEkifQ.ryt4iS1T8Ngvft1CgeFczfamw2-HrXfHctDyxkCYdj4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

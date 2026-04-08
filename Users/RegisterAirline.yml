@@ -1,0 +1,36 @@
+info:
+  name: RegisterAirline
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/RegisterAirline"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"airlineName\": \"test\",\r
+
+      \  \"customerCode\": \"123\",\r
+
+      \  \"userEmail\": \"keoyang.l.aidctech@gmail.com\",\r
+
+      \  \"countryCode\": \"LAO\",\r
+
+      \  \"customerType\": \"1\",\r
+
+      \  \"userPassword\": \"123\",\r
+
+      \  \"attachFile\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

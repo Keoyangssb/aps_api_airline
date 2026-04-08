@@ -1,0 +1,21 @@
+info:
+  name: TrackRegistrationAndFlightPermission Copy
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://10.0.100.31:8087/api/LandingPage/TrackRegistrationAndFlightPermission
+  body:
+    type: json
+    data: "{\r
+
+      \  \"registration_flightPer_id\": \"APS-REG-2025-002\"\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

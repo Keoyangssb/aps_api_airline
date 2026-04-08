@@ -1,0 +1,42 @@
+info:
+  name: UpdateAirCraftType
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/MasterData/UpdateAirCraftType"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\" : \"590\",\r
+
+      \  \"icao_code\": \"test1234567\",\r
+
+      \  \"manufacturer\": \"test2\",\r
+
+      \  \"model_faa\": \"test2\",\r
+
+      \  \"physical_class_engine\": \"test2\",\r
+
+      \  \"num_engines\": \"123\",\r
+
+      \  \"approach_speed_knot\": \"123456\",\r
+
+      \  \"mtow_lb\": \"200\",\r
+
+      \  \"mtow_ton\": \"20\",\r
+
+      \  \"remark\": \"test2\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

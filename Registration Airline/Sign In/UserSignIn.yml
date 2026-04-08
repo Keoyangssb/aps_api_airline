@@ -1,0 +1,26 @@
+info:
+  name: UserSignIn
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/RegisterAirline/UserSignIn"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"email_address\": \"keoyang.l.aidctech@gmail.com\",\r
+
+      \  \"password\": \"1PycTc\",\r
+
+      \  \"passKey\": \"eyJiOjE3MzI1OTU0OTV9.ExR06O8Jqctp827e8g2R1pEaEyj-gFmWXXSPvkbDMVk-aIdC-tEcH\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

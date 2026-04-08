@@ -1,0 +1,46 @@
+info:
+  name: SubmitFlightPerPayment_ovf
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/SubmitFlightPerPayment_ovf"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"flight_per_id\": \"1\",\r
+
+      \  \"payee_type\": \"1\",\r
+
+      \  \"is_pay_transfer\": true,\r
+
+      \  \"is_pay_credit_card\": false,\r
+
+      \  \"is_pay_paypal\": false,\r
+
+      \  \"originating_bank_id\": 1,\r
+
+      \  \"receiving_bank_id\": 1,\r
+
+      \  \"payer_name\": \"lao airline\",\r
+
+      \  \"transaction_ref_num1\": \"ref001\",\r
+
+      \  \"transaction_ref_num2\": \"ref002\",\r
+
+      \  \"date_of_transfer\": \"2025-07-30\",\r
+
+      \  \"total_amount\": \"1000\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiNmJiM2U1YTYtMTA5My00MDY0LWJkODEtZjMyZjAyOGFlN2QyIiwiZXhwIjoxNzU1NDA0MTMyfQ.7JKRQcTRjKh1x_7sg7YU_qIo9QUfSzCigBLC_caecOY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

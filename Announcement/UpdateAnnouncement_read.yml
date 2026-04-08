@@ -1,0 +1,20 @@
+info:
+  name: UpdateAnnouncement_read
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Announcement/UpdateAnnouncement_read"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"2\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

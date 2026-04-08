@@ -1,0 +1,44 @@
+info:
+  name: ApplyMatchingInvoice
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/ApplyMatchingInvoice"
+  body:
+    type: json
+    data: "[\r
+
+      \  {\r
+
+      \    \"invoiceId\": \"6154\",\r
+
+      \    \"switchMsgId\": \"1\",\r
+
+      \    \"invoiceDate\": \"11/02/2025\",\r
+
+      \    \"invoiceNumber\": \"\",\r
+
+      \    \"movement\": \"4\",\r
+
+      \    \"totalInvoiceAmount\": \"1040\",\r
+
+      \    \"remainingBalance\": \"1040\",\r
+
+      \    \"matchingAmount\": \"1040\",\r
+
+      \    \"currency\": \"USD\"\r
+
+      \  }\r
+
+      ]"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,21 @@
+info:
+  name: GetAirCraftModel_by_id
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/MasterData/GetAirCraftModel_by_id"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"aircraft_type_id\": \"193\"\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

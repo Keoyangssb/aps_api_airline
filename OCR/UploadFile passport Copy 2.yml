@@ -1,0 +1,31 @@
+info:
+  name: UploadFile passport Copy 2
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Ocr/UploadFile4"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: file
+        value:
+          - /Users/keoyang/Downloads/flight permission/01_AOC.pdf
+      - name: expected_doc_type
+        type: text
+        value: ""
+        description: passport, id_card, business_registration
+        disabled: true
+      - name: callback_url
+        type: text
+        value: https://apiairline-aps.aidctech.net/api/Ocr/GetOcrCardData
+        disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

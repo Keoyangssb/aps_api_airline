@@ -1,0 +1,7 @@
+info:
+  name: FR24
+  type: folder
+  seq: 18
+
+request:
+  auth: inherit

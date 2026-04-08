@@ -1,0 +1,24 @@
+info:
+  name: AddNewPermission
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/UserRole/AddNewPermission"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"permission_name\": \"Receipt\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

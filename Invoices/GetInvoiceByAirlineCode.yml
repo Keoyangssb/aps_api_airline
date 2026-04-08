@@ -1,0 +1,20 @@
+info:
+  name: GetInvoiceByAirlineCode
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/GetInvoiceByAirlineCode"
+  body:
+    type: json
+    data: "{\r\n  \"airlineCode\": \"CRK\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

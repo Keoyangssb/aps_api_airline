@@ -1,0 +1,20 @@
+info:
+  name: GetTransactionInfoDetail
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/GetTransactionInfoDetail"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"13332\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

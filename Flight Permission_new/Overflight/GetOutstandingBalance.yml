@@ -1,0 +1,18 @@
+info:
+  name: GetOutstandingBalance
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/GetOutstandingBalance"
+  body:
+    type: json
+    data: "{\r\n  \"customer_id\": \"1\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,30 @@
+info:
+  name: DeclineMatchingInvoice
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/DeclineMatchingInvoice"
+  body:
+    type: json
+    data: "[\r
+
+      \  {\r
+
+      \    \"invoiceId\": \"\",\r
+
+      \    \"switchMsgId\": \"\"\r
+
+      \  }\r
+
+      ]"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: Flight Permission_new
+  type: folder
+  seq: 9
+
+request:
+  auth: inherit

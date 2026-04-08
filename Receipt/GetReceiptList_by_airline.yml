@@ -1,0 +1,36 @@
+info:
+  name: GetReceiptList_by_airline
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Receipt/GetReceiptList_by_airline"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"PageNumber\": 1,\r
+
+      \  \"PageSize\": 10,\r
+
+      \  \"airline_code\": \"SIA\",\r
+
+      \  \"invoice_no\": \"\",\r
+
+      \  \"transaction_reference\": \"\",\r
+
+      \  \"from_date\": \"\",\r
+
+      \  \"to_date\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

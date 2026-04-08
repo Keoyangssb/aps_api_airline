@@ -1,0 +1,35 @@
+info:
+  name: UpdateFlightPermissionAttachFile_ovf
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/UpdateFlightPermissionAttachFile_ovf?issue_date=2025-11-01&expire_date=2025-11-30&attach_file_id=1"
+  params:
+    - name: issue_date
+      value: 2025-11-01
+      type: query
+    - name: expire_date
+      value: 2025-11-30
+      type: query
+    - name: attach_file_id
+      value: "1"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /C:/Users/ASUS/Documents/upload/CyberSecurity.pdf
+          - /Users/littavanhphanalasy/Downloads/BRC (1).pdf
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

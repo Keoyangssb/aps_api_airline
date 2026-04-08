@@ -1,0 +1,21 @@
+info:
+  name: downloadFlightPermissionFile
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: 10.0.100.61/lan/api/FlightPermission/downloadFlightPermissionFile
+  body:
+    type: multipart-form
+    data:
+      - name: fileName
+        type: text
+        value: 6c7a5c28-5348-45a7-b4bb-78e3615fac2b.pdf
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

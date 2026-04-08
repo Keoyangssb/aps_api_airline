@@ -1,0 +1,24 @@
+info:
+  name: ConfirmOtp
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/ConfirmOtp"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"user_email\": \"littavanh.p.aidctech@gmail.com\",\r
+
+      \  \"otp\": \"724875\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

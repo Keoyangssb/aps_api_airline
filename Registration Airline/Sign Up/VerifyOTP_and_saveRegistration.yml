@@ -1,0 +1,86 @@
+info:
+  name: VerifyOTP_and_saveRegistration
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/RegisterAirline/VerifyOTP_and_saveRegistration"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"register_id\": \"\",\r
+
+      \  \"operator_type\": \"1\",\r
+
+      \  \"operator_name\": \"HONGKONG AIRLINES\",\r
+
+      \  \"country_id\": \"1\",\r
+
+      \  \"iata_code\": \"CRK\",\r
+
+      \  \"icao_code\": \"CRK\",\r
+
+      \  \"business_reg_number\": \"123\",\r
+
+      \  \"agent_oper_number\": \"123\",\r
+
+      \  \"hq_country_id\": \"1\",\r
+
+      \  \"hq_city_town\": \"vte\",\r
+
+      \  \"hq_state_province\": \"vte\",\r
+
+      \  \"free_form\": \"abc\",\r
+
+      \  \"ba_country_id\": \"1\",\r
+
+      \  \"ba_city_town\": \"vte\",\r
+
+      \  \"ba_state_province\": \"vte\",\r
+
+      \  \"remark\": \"string\",\r
+
+      \  \"identity_type\": \"1\",\r
+
+      \  \"id_card_no\": \"1234567890\",\r
+
+      \  \"expire_date\": \"2028-12-31\",\r
+
+      \  \"name_and_surname\": \"CRK airline\",\r
+
+      \  \"position\": \"test\",\r
+
+      \  \"phone_country_code\": \"856\",\r
+
+      \  \"phone_number\": \"20 123\",\r
+
+      \  \"email_address\": \"littavanh.p.aidctech@gmail.com\",\r
+
+      \  \"auth_rep_identity_type\": \"1\",\r
+
+      \  \"auth_rep_id_card_no\": \"1234567891\",\r
+
+      \  \"auth_rep_expire_date\": \"2029-12-31\",\r
+
+      \  \"auth_rep_name_and_surname\": \"auth name\",\r
+
+      \  \"auth_rep_position\": \"auth\",\r
+
+      \  \"auth_rep_phone_country_code\": \"856\",\r
+
+      \  \"auth_rep_phone_number\": \"23456\",\r
+
+      \  \"auth_rep_email_address\": \"auth@gmail.com\",\r
+
+      \  \"otp\": \"532172\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,66 @@
+info:
+  name: SubmitPayment
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/SubmitPayment"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"transactionNo\": \"2025022100114511\",\r
+
+      \  \"paymentDate\": \"2025-04-28\",\r
+
+      \  \"amount\": \"26225\",\r
+
+      \  \"description\": \"test\",\r
+
+      \  \"invoiceDetail\": [\r
+
+      \    {\r
+
+      \      \"invoiceId\": \"6155\",\r
+
+      \      \"uploadDate\": \"2024-09-01\",\r
+
+      \      \"invoiceNo\": \"LANS/OVF/BAV/10/2024/017\",\r
+
+      \      \"totalFee\": \"920\",\r
+
+      \      \"totalPaid\": \"0\",\r
+
+      \      \"totalBalance\": \"920\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"invoiceId\": \"6687\",\r
+
+      \      \"uploadDate\": \"2024-02-01\",\r
+
+      \      \"invoiceNo\": \"LANS/OVF/HBH/02/2024/048\",\r
+
+      \      \"totalFee\": \"2300\",\r
+
+      \      \"totalPaid\": \"0\",\r
+
+      \      \"totalBalance\": \"2300\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

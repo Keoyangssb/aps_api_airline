@@ -1,0 +1,22 @@
+info:
+  name: RequestOTP
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/RegisterAirline/RequestOTP"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"email_address\": \"littavanh.p.aidctech@gmail.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

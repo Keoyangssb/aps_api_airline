@@ -1,0 +1,24 @@
+info:
+  name: GetDashboard Copy
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: 10.0.100.61/airline/api/Dashboard2/GetDashboard
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2025\",\r
+
+      \  \"customer_code\": \"TAX\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

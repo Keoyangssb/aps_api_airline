@@ -1,0 +1,7 @@
+info:
+  name: Air Craft Info
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

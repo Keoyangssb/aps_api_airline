@@ -1,0 +1,32 @@
+info:
+  name: UpdateCallSign
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/MasterData/UpdateCallSign"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"flight_id\": \"1\",\r
+
+      \  \"callsign\": \"1111\",\r
+
+      \  \"departure_airport\": \"1\",\r
+
+      \  \"arrival_airport\": \"2\",\r
+
+      \  \"aircraft_id\": \"2\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

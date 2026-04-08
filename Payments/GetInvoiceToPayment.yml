@@ -1,0 +1,28 @@
+info:
+  name: GetInvoiceToPayment
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/GetInvoiceToPayment"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\",\r
+
+      \  \"customer_code\": \"CRK\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

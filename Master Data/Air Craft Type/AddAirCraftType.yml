@@ -1,0 +1,40 @@
+info:
+  name: AddAirCraftType
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/MasterData/AddAirCraftType"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"icao_code\": \"test123456\",\r
+
+      \  \"manufacturer\": \"test\",\r
+
+      \  \"model_faa\": \"test\",\r
+
+      \  \"physical_class_engine\": \"test\",\r
+
+      \  \"num_engines\": \"123\",\r
+
+      \  \"approach_speed_knot\": \"123456\",\r
+
+      \  \"mtow_lb\": \"100\",\r
+
+      \  \"mtow_ton\": \"10\",\r
+
+      \  \"remark\": \"test\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

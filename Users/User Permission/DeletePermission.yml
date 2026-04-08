@@ -1,0 +1,20 @@
+info:
+  name: DeletePermission
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/UserRole/DeletePermission"
+  body:
+    type: json
+    data: "{\r\n    \"id\": \"65\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

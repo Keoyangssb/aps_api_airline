@@ -1,0 +1,17 @@
+info:
+  name: GetReviewRegistration Copy
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: 10.0.100.61/airline/api/RegisterAirline/GetReviewRegistration
+  body:
+    type: json
+    data: "{\r\n  \"register_id\": \"147\"\r\n}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

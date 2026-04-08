@@ -1,0 +1,46 @@
+info:
+  name: SubmitRegistration
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/RegisterAirline/SubmitRegistration"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"register_id\": \"6\",\r
+
+      \  \"operator_type\": \"2\",\r
+
+      \  \"aircraft_type_id\": \"\",\r
+
+      \  \"aircraft_model\": \"\",\r
+
+      \  \"registration_mark\": \"\",\r
+
+      \  \"mtow\": \"\",\r
+
+      \  \"seat\": \"\",\r
+
+      \  \"remark\": \"\",\r
+
+      \  \"is_aircraft_leased\": false,\r
+
+      \  \"register_airline_id\": 2,\r
+
+      \  \"airline_country_id\": 94,\r
+
+      \  \"iata_code\": \"iata\",\r
+
+      \  \"icao_code\": \"icao\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: getflighpermissionfile
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: 10.0.100.61/airline/api/UploadFile/getflighpermissionfile/4c508188-a4b7-4bf0-85fa-1b2b9ffe31cd.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

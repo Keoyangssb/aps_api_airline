@@ -1,0 +1,26 @@
+info:
+  name: UpdatePermission
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/UserRole/UpdatePermission"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": \"65\",\r
+
+      \  \"permission_name\": \"Receipt\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

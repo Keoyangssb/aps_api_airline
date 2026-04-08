@@ -1,0 +1,20 @@
+info:
+  name: GetUserRolePermission
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/UserRole/GetUserRolePermission"
+  body:
+    type: json
+    data: "{\r\n    \"role_id\": \"1\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

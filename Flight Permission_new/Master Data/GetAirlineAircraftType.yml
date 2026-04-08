@@ -1,0 +1,20 @@
+info:
+  name: GetAirlineAircraftType
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://10.0.100.31:8087/api/MasterData/GetAirlineAircraftType
+  body:
+    type: json
+    data: "{\r\n    \"customer_id\": \"61\"\r\n}"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiM2UwM2Y0NjEtYmJiZC00NTA3LTk5MGUtMGNiMDU3OTU5ZjQ3IiwiZXhwIjoxNzUzNjc4MjMyfQ.IKGDacGU0UU1iNbD6Tyg4wdPuyUSHJHynHj4hBlzCZA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,30 @@
+info:
+  name: AddCallSign
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/MasterData/AddCallSign"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"callsign\": \"test123\",\r
+
+      \  \"departure_airport\": \"1\",\r
+
+      \  \"arrival_airport\": \"2\",\r
+
+      \  \"aircraft_id\": \"1\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

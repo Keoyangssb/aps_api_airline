@@ -1,0 +1,17 @@
+info:
+  name: GetDepositCalculation_ovf
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://10.0.100.31:8087/api/FlightPermission/GetDepositCalculation_ovf
+  body:
+    type: json
+    data: "{\r\n  \"flight_per_id\": \"42\"\r\n}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

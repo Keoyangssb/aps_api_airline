@@ -1,0 +1,28 @@
+info:
+  name: GetAnnouncementList
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Announcement/GetAnnouncementList"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from_date\": \"2025-01-12\",\r
+
+      \  \"to_date\": \"2026-12-15\",\r
+
+      \  \"status\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: Calendar_notic
+  type: folder
+  seq: 16
+
+request:
+  auth: inherit

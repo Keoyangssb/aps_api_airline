@@ -1,0 +1,26 @@
+info:
+  name: UploadFile passport
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://apiairline-aps.aidctech.net/api/Ocr/UploadFile
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: file
+        value:
+          - /Users/littavanhphanalasy/Documents/APS/Example registration's attach files/passport demo.jpeg
+      - name: expected_doc_type
+        type: text
+        value: passport
+        description: passport, id_card, business_registration
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

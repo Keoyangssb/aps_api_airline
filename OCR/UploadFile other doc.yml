@@ -1,0 +1,28 @@
+info:
+  name: UploadFile other doc
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Ocr/UploadFile"
+  body:
+    type: multipart-form
+    data:
+      - name: data
+        type: file
+        value:
+          - /Users/keoyang/Downloads/flight permission/01_AOC.pdf
+      - name: expected_doc_type
+        type: text
+        value: business_registration
+      - name: callback_url
+        type: text
+        value: https://apiairline-aps.aidctech.net/api/Ocr/GetOcrCardData
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
