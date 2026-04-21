@@ -1,0 +1,32 @@
+info:
+  name: submitNewAircraft
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://apiairline-aps.aidctech.net/api/RegisterAirline/SubmitRegistration
+  body:
+    type: json
+    data: |-
+      {
+        "register_id": "147",
+        "operator_type": "1",
+        "aircraft_type_id": "231",
+        "aircraft_model": "ATR-42-400",
+        "registration_mark": "AT44",
+        "mtow": "16",
+        "seat": "100",
+        "remark": "",
+        "is_aircraft_leased": true,
+        "register_airline_id": 0,
+        "airline_country_id": 0,
+        "iata_code": "",
+        "icao_code": ""
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

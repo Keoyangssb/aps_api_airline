@@ -1,0 +1,32 @@
+info:
+  name: submitNewAirline
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: https://apiairline-aps.aidctech.net/api/RegisterAirline/SubmitRegistration
+  body:
+    type: json
+    data: |-
+      {
+        "register_id": "199",
+        "operator_type": "2",
+        "aircraft_type_id": "",
+        "aircraft_model": "",
+        "registration_mark": "",
+        "mtow": "",
+        "seat": "",
+        "remark": "",
+        "is_aircraft_leased": false,
+        "register_airline_id": 147,
+        "airline_country_id": 94,
+        "iata_code": "AAJ",
+        "icao_code": "AAJ"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,46 @@
+info:
+  name: saveSubmitAircraftFile
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/RegisterAirline/SaveSubmitRegistrationFiles?airline_aircraft_id=3"
+  params:
+    - name: airline_aircraft_id
+      value: "3"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: lease_file
+        type: file
+        value:
+          - /C:/Users/ASUS/Documents/upload/16. ແຈ້ງການ ການຂໍອະນຸມັດເງິນຜ່ານ Lark.pdf
+      - name: photo_of_aircraft_file
+        type: file
+        value:
+          - /C:/Users/ASUS/Documents/upload/CyberSecurity - Copy (2).pdf
+      - name: cor_file
+        type: file
+        value:
+          - /C:/Users/ASUS/Documents/upload/CyberSecurity.pdf
+      - name: coa_file
+        type: file
+        value:
+          - /C:/Users/ASUS/Documents/upload/Leonardo_Phoenix_10_Create_an_image_of_an_adorable_anthropomor_0.jpg
+      - name: coi_file
+        type: file
+        value:
+          - /C:/Users/ASUS/Documents/upload/Leonardo_Phoenix_10_Create_an_image_of_an_adorable_anthropomor_0.jpg
+      - name: airline_bus_reg_cer_file
+        type: file
+        value:
+          - /C:/Users/ASUS/Documents/upload/Leonardo_Phoenix_10_Create_an_image_of_an_adorable_anthropomor_0.jpg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
