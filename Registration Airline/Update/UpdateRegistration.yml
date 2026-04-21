@@ -16,6 +16,8 @@ http:
 
       \  \"operator_name\": \"HONGKONG AIRLINES test update\",\r
 
+      \  \"agent_code\": \"\",\r
+
       \  \"country_id\": \"1\",\r
 
       \  \"iata_code\": \"CRK\",\r

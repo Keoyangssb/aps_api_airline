@@ -2,11 +2,22 @@ opencollection: 1.0.0
 
 info:
   name: APS_Api_Airline
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
 
 request:
   variables:
     - name: currentIP
-      value: http://10.0.100.31:8082
+      value: " https://apiairline-aps.aidctech.net"
     - name: authToken
       value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjIwOTIxNjIwMjIwMDIzNDI1MjE0MDE3ODQwNzk0NTExMTUwMjMzMjIzMTAyNDk0MzI1MTE0MzIzMjE4MTI4MTc0MjQ1MjA4MjMzODg3MzIzMiIsImp0aSI6Ijc2ZDI3MTgyLWFlNWMtNGJlMS1iNWY4LTA4NThlMzg5MzNhYSIsImV4cCI6MTc0NDYyNjI1NywiaXNzIjoiQUlEQy5URUNIIiwiYXVkIjoiQVBTLkFpcmxpbmUuQVBJIn0.zR3ucRFRDObOxKyODJ9mcokpr03GJZ28JIf2AGcbWmU
 bundled: false

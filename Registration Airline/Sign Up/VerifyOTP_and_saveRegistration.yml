@@ -8,75 +8,43 @@ http:
   url: "{{currentIP}}/api/RegisterAirline/VerifyOTP_and_saveRegistration"
   body:
     type: json
-    data: "{\r
-
-      \  \"register_id\": \"\",\r
-
-      \  \"operator_type\": \"1\",\r
-
-      \  \"operator_name\": \"HONGKONG AIRLINES\",\r
-
-      \  \"country_id\": \"1\",\r
-
-      \  \"iata_code\": \"CRK\",\r
-
-      \  \"icao_code\": \"CRK\",\r
-
-      \  \"business_reg_number\": \"123\",\r
-
-      \  \"agent_oper_number\": \"123\",\r
-
-      \  \"hq_country_id\": \"1\",\r
-
-      \  \"hq_city_town\": \"vte\",\r
-
-      \  \"hq_state_province\": \"vte\",\r
-
-      \  \"free_form\": \"abc\",\r
-
-      \  \"ba_country_id\": \"1\",\r
-
-      \  \"ba_city_town\": \"vte\",\r
-
-      \  \"ba_state_province\": \"vte\",\r
-
-      \  \"remark\": \"string\",\r
-
-      \  \"identity_type\": \"1\",\r
-
-      \  \"id_card_no\": \"1234567890\",\r
-
-      \  \"expire_date\": \"2028-12-31\",\r
-
-      \  \"name_and_surname\": \"CRK airline\",\r
-
-      \  \"position\": \"test\",\r
-
-      \  \"phone_country_code\": \"856\",\r
-
-      \  \"phone_number\": \"20 123\",\r
-
-      \  \"email_address\": \"littavanh.p.aidctech@gmail.com\",\r
-
-      \  \"auth_rep_identity_type\": \"1\",\r
-
-      \  \"auth_rep_id_card_no\": \"1234567891\",\r
-
-      \  \"auth_rep_expire_date\": \"2029-12-31\",\r
-
-      \  \"auth_rep_name_and_surname\": \"auth name\",\r
-
-      \  \"auth_rep_position\": \"auth\",\r
-
-      \  \"auth_rep_phone_country_code\": \"856\",\r
-
-      \  \"auth_rep_phone_number\": \"23456\",\r
-
-      \  \"auth_rep_email_address\": \"auth@gmail.com\",\r
-
-      \  \"otp\": \"532172\"\r
-
-      }"
+    data: |-
+      {
+        "register_id": "",
+        "operator_type": "1",
+        "operator_name": "HONGKONG AIRLINES",
+        "agent_code": "", //for agent
+        "country_id": "1",
+        "iata_code": "CRK",
+        "icao_code": "CRK",
+        "business_reg_number": "123",
+        "agent_oper_number": "123",
+        "hq_country_id": "1",
+        "hq_city_town": "vte",
+        "hq_state_province": "vte",
+        "free_form": "abc",
+        "ba_country_id": "1",
+        "ba_city_town": "vte",
+        "ba_state_province": "vte",
+        "remark": "string",
+        "identity_type": "1",
+        "id_card_no": "1234567890",
+        "expire_date": "2028-12-31",
+        "name_and_surname": "CRK airline",
+        "position": "test",
+        "phone_country_code": "856",
+        "phone_number": "20 123",
+        "email_address": "littavanh.p.aidctech@gmail.com",
+        "auth_rep_identity_type": "1",
+        "auth_rep_id_card_no": "1234567891",
+        "auth_rep_expire_date": "2029-12-31",
+        "auth_rep_name_and_surname": "auth name",
+        "auth_rep_position": "auth",
+        "auth_rep_phone_country_code": "856",
+        "auth_rep_phone_number": "23456",
+        "auth_rep_email_address": "auth@gmail.com",
+        "otp": "532172"
+      }
   auth: inherit
 
 settings:
