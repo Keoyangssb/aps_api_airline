@@ -5,16 +5,16 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Dashboard2/GetDashboard"
+  url: https://apiairline-aps.aidctech.net/api/Dashboard2/GetDashboard
   body:
     type: json
-    data: "{\r
-
-      \  \"year\": \"2024\",\r
-
-      \  \"customer_code\": \"CRK\"\r
-
-      }"
+    data: |-
+      {
+        "year": "2024",
+        "customer_code": "AGE1",
+        "user_id": "199",
+        "operator_type_id": "2"
+      }
   auth: inherit
 
 settings:
