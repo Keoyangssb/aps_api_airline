@@ -1,7 +1,7 @@
 info:
   name: DeleteUserAirline
   type: http
-  seq: 5
+  seq: 6
 
 http:
   method: POST
@@ -14,7 +14,7 @@ http:
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnaczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrZW95YW5nLmwuYWlkY3RlY2hAZ21haWwuY29tIiwiVXNlcklkIjoiMTQ3IiwiUm9sZUlkIjoiQWlybGluZSIsImp0aSI6IjExNjI2N2FiLWI1NzktNGJjMy1hZDdkLWRmYTI3ZDg3NDIxNiIsImV4cCI6MTc3NzE3NjAxMSwiaXNzIjoiQUlEQy5URUNIIiwiYXVkIjoiQVBTLkFpcmxpbmUuQVBJIn0.hrtai1ZmNp9zA6uZO7odKcz7RVoVJUI60tbUiH6QcKY
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrZW95YW5nLmwuYWlkY3RlY2hAZ21haWwuY29tIiwiVXNlcklkIjoiMTQ3IiwiUm9sZUlkIjoiQWlybGluZSIsImp0aSI6IjExNjI2N2FiLWI1NzktNGJjMy1hZDdkLWRmYTI3ZDg3NDIxNiIsImV4cCI6MTc3NzE3NjAxMSwiaXNzIjoiQUlEQy5URUNIIiwiYXVkIjoiQVBTLkFpcmxpbmUuQVBJIn0.hrtai1ZmNp9zA6uZO7odKcz7RVoVJUI60tbUiH6QcKY
 
 settings:
   encodeUrl: true

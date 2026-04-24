@@ -1,20 +1,11 @@
 info:
-  name: CreateUserAirline
+  name: GetAirlineUserRoles
   type: http
-  seq: 2
+  seq: 1
 
 http:
-  method: POST
-  url: https://apiairline-aps.aidctech.net/api/User/CreateUserAirline
-  body:
-    type: json
-    data: |-
-      {
-          "full_name": "Keoyang",
-          "email_address": "keoyangpro@gmail.com",
-          "remark": "test",
-          "role_id": "2"
-      }
+  method: GET
+  url: https://apiairline-aps.aidctech.net/api/User/GetAirlineUserRoles
   auth:
     type: bearer
     token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrZW95YW5nLmwuYWlkY3RlY2hAZ21haWwuY29tIiwiVXNlcklkIjoiMTQ3IiwiUm9sZUlkIjoiQWlybGluZSIsImp0aSI6IjExNjI2N2FiLWI1NzktNGJjMy1hZDdkLWRmYTI3ZDg3NDIxNiIsImV4cCI6MTc3NzE3NjAxMSwiaXNzIjoiQUlEQy5URUNIIiwiYXVkIjoiQVBTLkFpcmxpbmUuQVBJIn0.hrtai1ZmNp9zA6uZO7odKcz7RVoVJUI60tbUiH6QcKY
