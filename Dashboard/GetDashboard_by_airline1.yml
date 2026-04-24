@@ -1,7 +1,7 @@
 info:
-  name: GetDashboard
+  name: GetDashboard_by_airline1
   type: http
-  seq: 1
+  seq: 6
 
 http:
   method: POST
@@ -11,9 +11,9 @@ http:
     data: |-
       {
         "year": "2026",
-        "customer_code": "AGE1",
-        "user_id": "199",
-        "operator_type_id": "2"
+        "customer_code": "CRK",
+        "user_id": "",
+        "operator_type_id": "1"
       }
   auth: inherit
 

@@ -1,17 +1,20 @@
 info:
   name: DeleteUserAirline
   type: http
-  seq: 4
+  seq: 5
 
 http:
   method: POST
-  url: "{{currentIP}}/api/User/DeleteUserAirline"
+  url: https://apiairline-aps.aidctech.net/api/User/DeleteUserAirline
   body:
     type: json
-    data: "{\r\n    \"user_id\": \"15\"\r\n}"
+    data: |-
+      {
+          "user_id": "147"
+      }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnaczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrZW95YW5nLmwuYWlkY3RlY2hAZ21haWwuY29tIiwiVXNlcklkIjoiMTQ3IiwiUm9sZUlkIjoiQWlybGluZSIsImp0aSI6IjExNjI2N2FiLWI1NzktNGJjMy1hZDdkLWRmYTI3ZDg3NDIxNiIsImV4cCI6MTc3NzE3NjAxMSwiaXNzIjoiQUlEQy5URUNIIiwiYXVkIjoiQVBTLkFpcmxpbmUuQVBJIn0.hrtai1ZmNp9zA6uZO7odKcz7RVoVJUI60tbUiH6QcKY
 
 settings:
   encodeUrl: true

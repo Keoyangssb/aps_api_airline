@@ -1,25 +1,23 @@
 info:
   name: UpdateUserAirline
   type: http
-  seq: 3
+  seq: 4
 
 http:
   method: POST
-  url: "{{currentIP}}/api/User/UpdateUserAirline"
+  url: https://apiairline-aps.aidctech.net/api/User/UpdateUserAirline
   body:
     type: json
-    data: "{\r
-
-      \    \"user_id\": \"15\",\r
-
-      \    \"user_role_id\": \"1\",\r
-
-      \    \"customer_id\": \"135\"\r
-
-      }"
+    data: |-
+      {
+          "user_id": "147",
+          "full_name": "Keo",
+          "role_id": "1",
+          "remark": "test"
+      }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrZW95YW5nLmwuYWlkY3RlY2hAZ21haWwuY29tIiwiVXNlcklkIjoiMTQ3IiwiUm9sZUlkIjoiQWlybGluZSIsImp0aSI6IjExNjI2N2FiLWI1NzktNGJjMy1hZDdkLWRmYTI3ZDg3NDIxNiIsImV4cCI6MTc3NzE3NjAxMSwiaXNzIjoiQUlEQy5URUNIIiwiYXVkIjoiQVBTLkFpcmxpbmUuQVBJIn0.hrtai1ZmNp9zA6uZO7odKcz7RVoVJUI60tbUiH6QcKY
 
 settings:
   encodeUrl: true

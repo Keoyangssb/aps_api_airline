@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/RegisterAirline/UserSignIn"
+  url: https://apiairline-aps.aidctech.net/api/RegisterAirline/UserSignIn
   body:
     type: json
     data: "{\r

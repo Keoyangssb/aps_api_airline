@@ -1,14 +1,17 @@
 info:
   name: GetUserAirlineById
   type: http
-  seq: 2
+  seq: 3
 
 http:
   method: POST
   url: "{{currentIP}}/api/User/GetUserAirlineById"
   body:
     type: json
-    data: "{\r\n    \"user_id\": \"15\"\r\n}"
+    data: |-
+      {
+          "user_id": "147"
+      }
   auth:
     type: bearer
     token: "{{authToken}}"

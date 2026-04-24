@@ -1,0 +1,26 @@
+info:
+  name: CreateUserAirline
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://apiairline-aps.aidctech.net/api/User/CreateUserAirline
+  body:
+    type: json
+    data: |-
+      {
+          "full_name": "Keoyang",
+          "email_address": "keoyangpro@gmail.com",
+          "remark": "test",
+          "role_id": "2"
+      }
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
