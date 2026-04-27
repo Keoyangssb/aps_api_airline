@@ -11,8 +11,8 @@ http:
     data: |-
       {
         "year": "2026",
-        "customer_code": "AGE1",
-        "user_id": "199",
+        "customer_code": "AGL",
+        "user_id": "200",
         "operator_type_id": "2"
       }
   auth: inherit

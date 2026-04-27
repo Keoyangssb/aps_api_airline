@@ -8,85 +8,48 @@ http:
   url: "{{currentIP}}/api/FlightPermission/SaveDraftSubmitFlightPer_ovf"
   body:
     type: json
-    data: "{\r
-
-      \    \"customer_id\": \"163\",\r
-
-      \    \"select_flight_type\": \"1\",\r
-
-      \    \"select_urgency\": \"1\",\r
-
-      \    \"season_id\": \"1\",\r
-
-      \    \"operator_type_id\": \"1\",\r
-
-      \    \"request_no\": \"\",\r
-
-      \    \"request_date\": \"2026-02-10\",\r
-
-      \    \"purpose_flight_id\": \"1\",\r
-
-      \    \"tfc_proviso\": \"\",\r
-
-      \    \"save_type\": \"2\",\r
-
-      \    \"flight_per_details\": [\r
-
-      \        {\r
-
-      \            \"flight_no\": \"ff001\",\r
-
-      \            \"max_seat\": \"\",\r
-
-      \            \"lease\": \"\",\r
-
-      \            \"mtow\": \"\",\r
-
-      \            \"route\": \"BUTRA, UBL (Bangkok FIR)\",\r
-
-      \            \"etd\": \"16:01\",\r
-
-      \            \"eta\": \"22:01\",\r
-
-      \            \"flight_level_id\": \"3\",\r
-
-      \            \"flight_per_detail_aircraft_types\": [\r
-
-      \                {\r
-
-      \                    \"acraft_type_id\": \"191\"\r
-
-      \                }\r
-
-      \            ],\r
-
-      \            \"from_date\": \"2026-02-10\",\r
-
-      \            \"to_date\": \"2026-02-17\",\r
-
-      \            \"date_of_operation\": \"\",\r
-
-      \            \"is_daily\": false,\r
-
-      \            \"is_mon\": true,\r
-
-      \            \"is_tue\": false,\r
-
-      \            \"is_wed\": true,\r
-
-      \            \"is_thu\": false,\r
-
-      \            \"is_fri\": true,\r
-
-      \            \"is_sat\": false,\r
-
-      \            \"is_sun\": false\r
-
-      \        }\r
-
-      \    ]\r
-
-      }"
+    data: |-
+      {
+          "customer_id": "163",
+          "select_flight_type": "1",
+          "select_urgency": "1",
+          "season_id": "1",
+          "operator_type_id": "1",
+          "airline_id": "", // if operator_type_id = 2, airline_id require
+          "request_no": "",
+          "request_date": "2026-02-10",
+          "purpose_flight_id": "1",
+          "tfc_proviso": "",
+          "save_type": "2",
+          "flight_per_details": [
+              {
+                  "flight_no": "ff001",
+                  "max_seat": "",
+                  "lease": "",
+                  "mtow": "",
+                  "route": "BUTRA, UBL (Bangkok FIR)",
+                  "etd": "16:01",
+                  "eta": "22:01",
+                  "flight_level_id": "3",
+                  "flight_per_detail_aircraft_types": [
+                      {
+                          "acraft_type_id": "191"
+                      }
+                  ],
+                  "from_date": "2026-02-10",
+                  "to_date": "2026-02-17",
+                  "date_of_operation": "",
+                  "is_daily": false,
+                  "is_mon": true,
+                  "is_tue": false,
+                  "is_wed": true,
+                  "is_thu": false,
+                  "is_fri": true,
+                  "is_sat": false,
+                  "is_sun": false
+              }
+          ]
+      }
   auth:
     type: bearer
     token: "{{authToken}}"

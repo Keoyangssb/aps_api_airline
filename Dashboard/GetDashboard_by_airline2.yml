@@ -11,7 +11,7 @@ http:
     data: |-
       {
         "year": "2026",
-        "customer_code": "AIQ",
+        "customer_code": "SIA",
         "user_id": "",
         "operator_type_id": "1"
       }
