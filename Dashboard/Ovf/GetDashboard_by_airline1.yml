@@ -1,7 +1,7 @@
 info:
-  name: GetDashboard_by_airline2
+  name: GetDashboard_by_airline1
   type: http
-  seq: 7
+  seq: 2
 
 http:
   method: POST
@@ -11,7 +11,7 @@ http:
     data: |-
       {
         "year": "2026",
-        "customer_code": "SIA",
+        "customer_code": "CRK",
         "user_id": "",
         "operator_type_id": "1"
       }

@@ -1,18 +1,18 @@
 info:
-  name: GetDashboard Copy
+  name: GetNumberOfFlightsCompare
   type: http
   seq: 2
 
 http:
   method: POST
-  url: 10.0.100.61/airline/api/Dashboard2/GetDashboard
+  url: "{{currentIP}}/api/DashboardLanding/GetNumberOfFlightsCompare"
   body:
     type: json
     data: "{\r
 
       \  \"year\": \"2025\",\r
 
-      \  \"customer_code\": \"TAX\"\r
+      \  \"customer_code\": \"SIA\"\r
 
       }"
   auth: inherit
