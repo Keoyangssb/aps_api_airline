@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5044/api/FlightPermissionLanding/SaveDraftSubmitFlightPer_landing
+  url: "{{currentIP}}/api/FlightPermissionLanding/SaveDraftSubmitFlightPer_landing"
   body:
     type: json
     data: |-

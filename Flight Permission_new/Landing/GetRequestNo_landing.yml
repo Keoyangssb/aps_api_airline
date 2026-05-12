@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:5044/api/FlightPermissionLanding/GetRequestNo_landing
+  url: "{{currentIP}}/api/FlightPermissionLanding/GetRequestNo_landing"
 
 settings:
   encodeUrl: true
