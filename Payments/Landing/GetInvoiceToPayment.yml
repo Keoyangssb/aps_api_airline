@@ -1,11 +1,11 @@
 info:
   name: GetInvoiceToPayment
   type: http
-  seq: 2
+  seq: 5
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Payment/GetInvoiceToPayment"
+  url: "{{currentIP}}/api/PaymentLanding/GetInvoiceToPayment"
   body:
     type: json
     data: "{\r

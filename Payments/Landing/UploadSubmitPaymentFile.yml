@@ -1,11 +1,11 @@
 info:
   name: UploadSubmitPaymentFile
   type: http
-  seq: 12
+  seq: 9
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Payment/UploadSubmitPaymentFile?paymentCode=20260130074142153"
+  url: "{{currentIP}}/api/PaymentLanding/UploadSubmitPaymentFile?paymentCode=20260130074142153"
   params:
     - name: paymentCode
       value: "20260130074142153"

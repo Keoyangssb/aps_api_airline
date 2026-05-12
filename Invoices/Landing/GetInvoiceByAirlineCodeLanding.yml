@@ -1,0 +1,20 @@
+info:
+  name: GetInvoiceByAirlineCodeLanding
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/GetInvoiceByAirlineCodeLanding"
+  body:
+    type: json
+    data: "{\r\n  \"airlineCode\": \"BMW\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

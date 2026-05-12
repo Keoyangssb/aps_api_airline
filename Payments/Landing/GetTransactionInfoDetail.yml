@@ -1,18 +1,14 @@
 info:
-  name: GetApplyMatchingInvoiceHistory
+  name: GetTransactionInfoDetail
   type: http
   seq: 7
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Payment/GetApplyMatchingInvoiceHistory"
+  url: "{{currentIP}}/api/PaymentLanding/GetTransactionInfoDetail"
   body:
     type: json
-    data: "{\r
-
-      \  \"customer_code\": \"CRK\"\r
-
-      }"
+    data: "{\r\n  \"id\": \"13332\"\r\n}"
   auth:
     type: bearer
     token: "{{authToken}}"

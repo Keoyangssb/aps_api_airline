@@ -1,11 +1,11 @@
 info:
-  name: GetMatchingPaymentToInvoice Copy
+  name: GetMatchingPaymentToInvoice
   type: http
-  seq: 4
+  seq: 6
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Payment/GetMatchingPaymentToInvoice"
+  url: "{{currentIP}}/api/PaymentLanding/GetMatchingPaymentToInvoice"
   body:
     type: json
     data: "{\r

@@ -1,14 +1,18 @@
 info:
-  name: GetInvoiceByAirlineCode Copy
+  name: GetApplyMatchingInvoiceHistory
   type: http
   seq: 3
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Invoice/GetInvoiceByAirlineCode"
+  url: "{{currentIP}}/api/PaymentLanding/GetApplyMatchingInvoiceHistory"
   body:
     type: json
-    data: "{\r\n  \"airlineCode\": \"BMW\"\r\n}"
+    data: "{\r
+
+      \  \"customer_code\": \"CRK\"\r
+
+      }"
   auth:
     type: bearer
     token: "{{authToken}}"

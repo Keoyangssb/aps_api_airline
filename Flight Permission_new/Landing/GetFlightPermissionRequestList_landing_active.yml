@@ -8,33 +8,21 @@ http:
   url: "{{currentIP}}/api/FlightPermissionLanding/GetFlightPermissionRequestList_landing_active"
   body:
     type: json
-    data: "{\r
-
-      \    \"from_date\": \"\",\r
-
-      \    \"to_date\": \"\",\r
-
-      \    \"operator_type_id\": \"\",\r
-
-      \    \"app_status_id\": \"8\",\r
-
-      \    \"purpose_flight_id\": \"\",\r
-
-      \    \"request_no\": \"\",\r
-
-      \    \"permit_no\": \"\",\r
-
-      \    \"flight_no\": \"\",\r
-
-      \    \"registration_mark\": \"\",\r
-
-      \    \"page_number\": 1,\r
-
-      \    \"page_size\": 10,\r
-
-      \    \"customer_id\": \"136\"\r
-
-      }"
+    data: |-
+      {
+          "from_date": "",
+          "to_date": "",
+          "operator_type_id": "",
+          "app_status_id": "",
+          "purpose_flight_id": "",
+          "request_no": "",
+          "permit_no": "",
+          "flight_no": "",
+          "registration_mark": "",
+          "page_number": 1,
+          "page_size": 10,
+          "customer_id": "163"
+      }
   auth: inherit
 
 settings:

@@ -1,11 +1,11 @@
 info:
   name: SubmitPayment
   type: http
-  seq: 10
+  seq: 8
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Payment/SubmitPayment"
+  url: "{{currentIP}}/api/PaymentLanding/SubmitPayment"
   body:
     type: json
     data: "{\r

@@ -1,11 +1,11 @@
 info:
   name: GetInvoiceInfoDetail
   type: http
-  seq: 8
+  seq: 4
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Payment/GetInvoiceInfoDetail"
+  url: "{{currentIP}}/api/PaymentLanding/GetInvoiceInfoDetail"
   body:
     type: json
     data: "{\r\n  \"id\": \"14030\"\r\n}"
