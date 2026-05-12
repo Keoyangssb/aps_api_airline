@@ -1,14 +1,14 @@
 info:
-  name: GetViewFlightPermissionById
+  name: GetExistingFlightPermissionByAirline
   type: http
-  seq: 8
+  seq: 18
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermissionLanding/GetViewFlightPermissionById"
+  url: "{{currentIP}}/api/FlightPermissionLanding/GetExistingFlightPermissionByAirline"
   body:
     type: json
-    data: "{\r\n  \"flight_per_id\": \"47\"\r\n}"
+    data: "{\r\n  \"airline_id\": \"153\"\r\n}"
   auth:
     type: bearer
     token: "{{authToken}}"

@@ -1,11 +1,11 @@
 info:
-  name: GetFlightPermissionRequestList_ovf
+  name: GetFlightPermissionRequestList_landing_active
   type: http
-  seq: 6
+  seq: 7
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/GetFlightPermissionRequestList_ovf"
+  url: "{{currentIP}}/api/FlightPermissionLanding/GetFlightPermissionRequestList_landing_active"
   body:
     type: json
     data: "{\r
@@ -16,7 +16,7 @@ http:
 
       \    \"operator_type_id\": \"\",\r
 
-      \    \"app_status_id\": \"4\",\r
+      \    \"app_status_id\": \"8\",\r
 
       \    \"purpose_flight_id\": \"\",\r
 

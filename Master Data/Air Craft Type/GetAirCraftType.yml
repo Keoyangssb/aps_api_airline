@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{currentIP}}/api/MasterData/GetAirCraftType"
+  url: "{{currentIP}}/api/MasterData/GetAircraftType"
   auth:
     type: bearer
     token: "{{authToken}}"

@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/SaveFlightPermissionAttachFile_landing?file_no=1&issue_date=2025-08-01&expire_date=2025-08-30&flight_per_id=10"
+  url: "{{currentIP}}/api/FlightPermissionLanding/SaveFlightPermissionAttachFile_landing?file_no=1&issue_date=2025-08-01&expire_date=2025-08-30&flight_per_id=10"
   params:
     - name: file_no
       value: "1"

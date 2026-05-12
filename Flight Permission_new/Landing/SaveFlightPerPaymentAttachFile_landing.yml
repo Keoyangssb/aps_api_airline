@@ -1,11 +1,11 @@
 info:
-  name: SaveFlightPerPaymentAttachFile_ovf
+  name: SaveFlightPerPaymentAttachFile_landing
   type: http
-  seq: 12
+  seq: 11
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/SaveFlightPerPaymentAttachFile_ovf?flight_per_id=1"
+  url: "{{currentIP}}/api/FlightPermissionLanding/SaveFlightPerPaymentAttachFile_landing?flight_per_id=1"
   params:
     - name: flight_per_id
       value: "1"

@@ -1,11 +1,11 @@
 info:
-  name: GetDepositCalculation_ovf
+  name: GetDepositCalculation_landing
   type: http
   seq: 9
 
 http:
   method: POST
-  url: http://10.0.100.31:8087/api/FlightPermission/GetDepositCalculation_ovf
+  url: http://10.0.100.31:8087/api/FlightPermissionLanding/GetDepositCalculation_landing
   body:
     type: json
     data: "{\r\n  \"flight_per_id\": \"42\"\r\n}"

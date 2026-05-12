@@ -1,11 +1,11 @@
 info:
-  name: SubmitFlightPerPayment_ovf
+  name: SubmitFlightPerPayment_landing
   type: http
-  seq: 11
+  seq: 10
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/SubmitFlightPerPayment_ovf"
+  url: "{{currentIP}}/api/FlightPermissionLanding/SubmitFlightPerPayment_landing"
   body:
     type: json
     data: "{\r

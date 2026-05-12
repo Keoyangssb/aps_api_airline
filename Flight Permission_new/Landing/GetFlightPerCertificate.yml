@@ -1,11 +1,11 @@
 info:
   name: GetFlightPerCertificate
   type: http
-  seq: 14
+  seq: 13
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/GetFlightPerCertificate"
+  url: "{{currentIP}}/api/FlightPermissionLanding/GetFlightPerCertificate"
   body:
     type: json
     data: "{\r\n  \"flight_per_id\": \"39\"\r\n}"

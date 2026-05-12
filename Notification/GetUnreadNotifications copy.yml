@@ -1,0 +1,25 @@
+info:
+  name: GetUnreadNotifications copy
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Notification/sendOneSignalNotification"
+  body:
+    type: json
+    data: |-
+      {
+        "playerIds": ["bf95512e-34c3-4df7-92da-f9f2db125b41"],
+        "title": "Login Alert",
+        "message": "Login to Airline Portal with email: keo@mail.com"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrZW95YW5nLmwuYWlkY3RlY2hAZ21haWwuY29tIiwiVXNlcklkIjoiMTQ3IiwiUm9sZUlkIjoiQWlybGluZSIsImp0aSI6ImQ1YjBlODhhLTgyNmEtNGIzMS05ZjNiLTI1ZTU5ZWZkZGUwNCIsImV4cCI6MTc3NzYwOTUyMSwiaXNzIjoiQUlEQy5URUNIIiwiYXVkIjoiQVBTLkFpcmxpbmUuQVBJIn0.7x9B8sXBO1rqdGQJUlSYqmqhpd48wMtOeKRQ086us4g
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
