@@ -1,0 +1,22 @@
+info:
+  name: GetInvoiceAmountAndFlightsComparison
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardLanding/GetInvoiceAmountAndFlightsComparison"
+  body:
+    type: json
+    data: |-
+      {
+        "year": "2026",
+        "customer_code": "SIA"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
