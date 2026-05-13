@@ -1,11 +1,11 @@
 info:
   name: generate_e_receipt
   type: http
-  seq: 4
+  seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Receipt/generate_e_receipt"
+  url: "{{currentIP}}/api/ReceiptLanding/generate_e_receipt"
   body:
     type: json
     data: "{\r
