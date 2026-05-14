@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/SaveFlightPermissionAttachFile_ovf?file_no=1&issue_date=2025-08-01&expire_date=2025-08-30&flight_per_id=10"
+  url: "{{currentIP}}/api/FlightPermission/SaveFlightPermissionAttachFile_ovf?file_no=1&issue_date=2025-08-01&expire_date=2025-08-30&flight_per_id=10&attach_file_path=https://apiairline-aps.aidctech.net/UploadedFiles/FlightPermissions/7027fc6e-2c2e-402a-a671-d3c582e101d6.jpg"
   params:
     - name: file_no
       value: "1"
@@ -19,13 +19,15 @@ http:
     - name: flight_per_id
       value: "10"
       type: query
+    - name: attach_file_path
+      value: https://apiairline-aps.aidctech.net/UploadedFiles/FlightPermissions/7027fc6e-2c2e-402a-a671-d3c582e101d6.jpg
+      type: query
   body:
     type: multipart-form
     data:
       - name: file
-        type: file
-        value:
-          - /C:/Users/ASUS/Pictures/aidc/MOF-APS _ Ministry of Finance - Air Aviation Payment System.pdf
+        type: text
+        value: https://apiairline-aps.aidctech.net/UploadedFiles/FlightPermissions/c4636329-8231-4f7f-af05-60fcc53e9db4.pdf
   auth:
     type: bearer
     token: "{{authToken}}"
