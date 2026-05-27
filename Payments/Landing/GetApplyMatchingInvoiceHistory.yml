@@ -8,14 +8,13 @@ http:
   url: "{{currentIP}}/api/PaymentLanding/GetApplyMatchingInvoiceHistory"
   body:
     type: json
-    data: "{\r
-
-      \  \"customer_code\": \"CRK\"\r
-
-      }"
+    data: |-
+      {
+        "customer_code": "SIA"
+      }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJrZW95YW5nLmwuYWlkY3RlY2hAZ21haWwuY29tIiwiVXNlcklkIjoiMTQ3IiwiUm9sZUlkIjoiQWlybGluZSIsImp0aSI6ImZjYTYxMjY3LTYxNDgtNGY0Ny05Mjc5LTE2N2Y0ZjRhMWJjNiIsImV4cCI6MTc3OTI0NjE3NiwiaXNzIjoiQUlEQy5URUNIIiwiYXVkIjoiQVBTLkFpcmxpbmUuQVBJIn0.zb-bb6W4ym6ZpvUBiRh2x39sjdMVNBKiOho2kcjzYDg
 
 settings:
   encodeUrl: true

@@ -8,10 +8,13 @@ http:
   url: "{{currentIP}}/api/PaymentLanding/GetInvoiceInfoDetail"
   body:
     type: json
-    data: "{\r\n  \"id\": \"14030\"\r\n}"
+    data: |-
+      {
+        "id": "1981"
+      }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsaXR0YXZhbmgucC5haWRjdGVjaEBnbWFpbC5jb20iLCJVc2VySWQiOiIxNjMiLCJSb2xlSWQiOiJBaXJsaW5lIiwianRpIjoiMTA0ZjAwMjYtMmE5ZS00ZjE1LWE5OWYtMzA5YjRhMjdjNjQxIiwiZXhwIjoxNzc5MzMzOTQ3LCJpc3MiOiJBSURDLlRFQ0giLCJhdWQiOiJBUFMuQWlybGluZS5BUEkifQ.-XW7B5zOk6QOcbsmaXNB8R0yz-PJnRcHV4KFpxpxYKE
 
 settings:
   encodeUrl: true

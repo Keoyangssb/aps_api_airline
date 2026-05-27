@@ -1,11 +1,11 @@
 info:
-  name: GetDashboard
+  name: GetDashboard_local
   type: http
-  seq: 1
+  seq: 4
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardLanding/GetDashboard"
+  url: http://localhost:6002/api/DashboardLanding/GetDashboard
   body:
     type: json
     data: |-
