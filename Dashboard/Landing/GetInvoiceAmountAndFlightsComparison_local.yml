@@ -1,11 +1,11 @@
 info:
-  name: GetInvoiceAmountAndFlightsComparison
+  name: GetInvoiceAmountAndFlightsComparison_local
   type: http
-  seq: 2
+  seq: 5
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardLanding/GetInvoiceAmountAndFlightsComparison"
+  url: http://localhost:6002/api/DashboardLanding/GetInvoiceAmountAndFlightsComparison
   body:
     type: json
     data: |-
