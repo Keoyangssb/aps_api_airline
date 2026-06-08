@@ -1,11 +1,11 @@
 info:
-  name: GetDashboard_local
+  name: GetAccountBalance_landing
   type: http
-  seq: 4
+  seq: 1
 
 http:
   method: POST
-  url: http://localhost:6002/api/DashboardLanding/GetDashboard
+  url: "{{currentIP}}/api/AccountBalance/GetAccountBalance_landing"
   body:
     type: json
     data: |-
