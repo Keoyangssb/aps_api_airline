@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Dashboard2/GetDashboard"
+  url: "{{currentIP}}/api/AccountBalance/GetAccountBalance_ovf"
   body:
     type: json
     data: |-

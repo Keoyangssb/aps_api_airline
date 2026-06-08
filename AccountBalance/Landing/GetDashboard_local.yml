@@ -1,18 +1,18 @@
 info:
-  name: GetDashboard
+  name: GetDashboard_local
   type: http
-  seq: 1
+  seq: 4
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Dashboard2/GetDashboard"
+  url: http://localhost:6002/api/DashboardLanding/GetDashboard
   body:
     type: json
     data: |-
       {
         "year": "2026",
-        "customer_code": "CRK",
-        "user_id": "147",
+        "customer_code": "SIA",
+        "user_id": "163",
         "operator_type_id": "1"
       }
   auth: inherit
