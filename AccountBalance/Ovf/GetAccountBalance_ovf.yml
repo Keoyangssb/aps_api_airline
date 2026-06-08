@@ -1,5 +1,5 @@
 info:
-  name: GetDashboard
+  name: GetAccountBalance_ovf
   type: http
   seq: 1
 
